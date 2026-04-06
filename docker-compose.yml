@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "80:80"
+      - "5173:80" # Maps standard dev port to Nginx for testing convenience
+    depends_on:
+      - backend
