@@ -1,0 +1,10 @@
+# Ignore the other folder depending on what you are deploying
+# If deploying Frontend only, ignore Backend:
+/backend
+
+
+# Common files to ignore
+.git
+README.md
+docker-compose.yml
+.idea
