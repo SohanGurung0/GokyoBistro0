@@ -1,7 +1,8 @@
 # Ignore the other folder depending on what you are deploying
 # If deploying Frontend only, ignore Backend:
 /backend
-
+# If deploying Backend only, ignore Frontend:
+/frontend
 
 # Common files to ignore
 .git
