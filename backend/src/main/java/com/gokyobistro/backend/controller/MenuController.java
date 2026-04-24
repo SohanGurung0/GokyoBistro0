@@ -9,6 +9,7 @@ import java.util.Arrays;
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = "${frontend.url}")
 @RequestMapping("/api/menu")
 public class MenuController {
 
